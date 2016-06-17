@@ -1,6 +1,15 @@
 NAME
         bin/c0c - The C0 project compiler for 15-411
 
+        The grading harness always expects to run the compiler from
+        the same directory that this document lives in, bin/c0c. It
+        always expects that the parent directory of this directory
+        contains the standard course repository materials.
+
+compiler should always
+        be run as bin/c0c "compiler" directory (the same directory
+        where this document lives)
+
 SYNOPSIS
         bin/c0c [-Olevel] [--emit=option] [-lib=headerfile.h0]
                 [--unsafe] infile.lN
@@ -24,11 +33,11 @@ SYNOPSIS
         output files described by the --emit option and then should
         return with the exit status 0.
 
-OPTIONS
-        The autograder will always run the c0c with the -O and --emit
-        options, but setting good defaults will help you when you run
-        the compiler by hand. -O1 and --emit=exe are probably good
-        defaults.
+OPTIONS 
+        The grading harness will ALWAYS run the c0c with the -O and
+        --emit options, but setting good defaults will help you when
+        you run the compiler by hand. -O1 and --emit=exe are probably
+        good defaults.
 
         -eoption or --emit=option
                 This option tells the compiler which files to produce
@@ -40,18 +49,18 @@ OPTIONS
                 files.
 
                 -ex86-64 (--emit=x86-64) is an option that must be
-                implemented for all assignments. It directs the
-                compiler, upon successful type checking, to produce
-                the file infile.lN.s. That file contains the
-                compilation of infile into x86-64 assembly.
+                implemented for all assignments as the default. It
+                directs the compiler, upon successful type checking,
+                to produce the file infile.lN.s. That file contains
+                the compilation of infile.lN into x86-64 assembly.
 
-                -epseudo (--emit=pseudo) is an option need not be
-                implemented. This flag is implemented in all "starter
-                code" compilers as the default option. It directs the
-                compiler to produce the file infile.lN.int. That file
-                contains the compilation of infile into an
-                intermediate language, abstract 3-address assembly
-                with unlimited temps.
+                -epseudo (--emit=pseudo) is an option that does not
+                need to be implemented. This flag is implemented in
+                all "starter code" compilers as the default option. It
+                directs the compiler to produce the file
+                infile.lN.int. That file contains the compilation of
+                infile.lN into an intermediate language, abstract
+                3-address assembly with unlimited temps.
 
                 -eexe (--emit=exe) is an option that is required for
                 some of the Lab 6 projects and that is very useful,
