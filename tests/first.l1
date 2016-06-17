@@ -1,0 +1,18 @@
+//test return 1
+
+// The tests you write for 15-411 will all go in this directory. The
+// tests we write will all be provided to you through the public course
+// repository in the directory ../../tests.
+
+// The first line in this file means that the testing harness will 
+// expect this to be a file that compiles and returns 1. 
+
+// This isn't the case! There's no code in this file, so it will
+// fail to compile (this is indicatied by writing 'test error'
+// instead). 
+
+// Read the handout and look at the files in ../../tests/lab1-basic
+// for more information.
+
+// You should turn this file into a working test. You are welcome to 
+// write some more tests.
