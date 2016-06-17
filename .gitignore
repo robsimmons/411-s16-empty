@@ -1,5 +1,8 @@
 *~
 bin
+*.abs
 *.s
 *.exe
 *.out
+*.ll
+*.bc
