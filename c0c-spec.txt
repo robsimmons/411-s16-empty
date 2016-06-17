@@ -2,13 +2,10 @@ NAME
         bin/c0c - The C0 project compiler for 15-411
 
         The grading harness always expects to run the compiler from
-        the same directory that this document lives in, bin/c0c. It
-        always expects that the parent directory of this directory
-        contains the standard course repository materials.
-
-compiler should always
-        be run as bin/c0c "compiler" directory (the same directory
-        where this document lives)
+        the same directory that this document lives in, bin/c0c. (The
+        grading harness also always expects that the parent directory
+        of this directory contains the standard course repository
+        materials.)
 
 SYNOPSIS
         bin/c0c [-Olevel] [--emit=option] [-lib=headerfile.h0]
