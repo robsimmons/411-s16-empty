@@ -50,9 +50,9 @@ OPTIONS
                 need to be implemented. This flag is implemented in
                 all "starter code" compilers as the default option. It
                 directs the compiler to produce the file
-                infile.lN.int. That file contains the compilation of
-                infile.lN into an intermediate language, abstract
-                3-address assembly with unlimited temps.
+                infile.lN.abs. That file contains the compilation of
+                infile.lN into abstract 3-address assembly with 
+                unlimited temps.
 
                 -eexe (--emit=exe) is an option that is required for
                 some of the Lab 6 projects and that is very useful,
