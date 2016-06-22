@@ -8,7 +8,7 @@
 
 default: lab1
 lab*: bin
-	$(MAKE) -C $@
+       $(MAKE) -C $@
 
 bin: 
 	mkdir bin
