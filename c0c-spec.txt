@@ -40,11 +40,6 @@ OPTIONS
                 This option tells the compiler which files to produce
                 after type checking is successful.
 
-                -enothing (--emit=nothing) is an option that must be
-                implemented for all assignments. It directs the
-                compiler to stop after type checking and produce no
-                files.
-
                 -ex86-64 (--emit=x86-64) is an option that must be
                 implemented for all assignments as the default. It
                 directs the compiler, upon successful type checking,
@@ -71,7 +66,9 @@ OPTIONS
 
         -t or --typecheck-only
                 This option must be implemented for all
-                assignments. It means the same thing as -enothing
+                assignments. It directs the compiler to ignore the
+                "--emit" option, and stop after type checking, and
+                produce no files.
 
         --unsafe
                 This option must be implemented for Lab 5. It directs

@@ -6,3 +6,5 @@ bin
 *.out
 *.ll
 *.bc
+top.native
+_build
