@@ -46,12 +46,12 @@ OPTIONS
                 to produce the file infile.lN.s. That file contains
                 the compilation of infile.lN into x86-64 assembly.
 
-                -epseudo (--emit=pseudo) is an option that does not
-                need to be implemented. This flag is implemented in
-                all "starter code" compilers as the default option. It
+                -eabs (--emit=abs) is an option that does not need to
+                be implemented. This flag is implemented in all
+                "starter code" compilers as the default option. It
                 directs the compiler to produce the file
                 infile.lN.abs. That file contains the compilation of
-                infile.lN into abstract 3-address assembly with 
+                infile.lN into abstract 3-address assembly with
                 unlimited temps.
 
                 -eexe (--emit=exe) is an option that is required for
